@@ -4,6 +4,19 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeIconFiles</key>
+			<array/>
+			<key>CFBundleTypeName</key>
+			<string>USDZ</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.pixar.universal-scene-description.mobile</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,8 +37,6 @@
 	<string>This application will use the camera for Augmented Reality.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -46,40 +57,27 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>CFBundleDocumentTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleTypeIconFiles</key>
-            <array/>
-            <key>CFBundleTypeName</key>
-            <string>USDZ</string>
-            <key>LSItemContentTypes</key>
-            <array>
-                <string>com.pixar.universal-scene-description.mobile</string>
-            </array>
-        </dict>
-    </array>
-    <key>UTImportedTypeDeclarations</key>
-    <array>
-        <dict>
-            <key>UTTypeConformsTo</key>
-            <array>
-                <string>public.data</string>
-            </array>
-            <key>UTTypeDescription</key>
-            <string>USDZ</string>
-            <key>UTTypeIconFiles</key>
-            <array/>
-            <key>UTTypeIdentifier</key>
-            <string>com.pixar.universal-scene-description.mobile</string>
-            <key>UTTypeTagSpecification</key>
-            <dict>
-                <key>public.filename-extension</key>
-                <array>
-                    <string>usdz</string>
-                </array>
-            </dict>
-        </dict>
-    </array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>USDZ</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.pixar.universal-scene-description.mobile</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>usdz</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
