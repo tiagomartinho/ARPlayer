@@ -12,6 +12,7 @@ class FileSystemAssetsRepository: AssetsRepository {
         guard let userDocumentDirectory = fileManager.userDocumentDirectory else { return }
         do {
             let finalDirectory = userDocumentDirectory.appendingPathComponent(URL.lastPathComponent)
+            try fileManager.removeItem(at: finalDirectory)
             try fileManager.moveItem(at: URL, to: finalDirectory)
             print("Moved")
         } catch let error {

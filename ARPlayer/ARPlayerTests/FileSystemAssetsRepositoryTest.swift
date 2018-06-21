@@ -21,9 +21,17 @@ class FileSystemAssetsRepositoryTest: XCTestCase {
     
     func testSaveAssetIntoUserDocumentDirectoryWithFileName() {
         let dstURL = fileManager.userDocumentDirectory?.appendingPathComponent("fileName")
-        g
+        
         repository.save(from: url)
         
         XCTAssertEqual(dstURL, fileManager.dstURL)
+    }
+    
+    func testRemovesExistingFileBeforeSave() {
+        let dstURL = fileManager.userDocumentDirectory?.appendingPathComponent("fileName")
+        
+        repository.save(from: url)
+        
+        XCTAssertEqual(dstURL, fileManager.removedItemURL)
     }
 }
