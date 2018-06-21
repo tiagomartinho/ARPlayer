@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  ARPlayer
-//
-//  Created by Tiago on 21/06/2018.
-//  Copyright © 2018 Tiago. All rights reserved.
-//
-
 import UIKit
 import SceneKit
 import ARKit
@@ -13,6 +5,14 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    
+    var modelURL: URL? {
+        didSet {
+            if let url = modelURL {
+                print("3D model \"\(url.lastPathComponent)\" received.")
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
