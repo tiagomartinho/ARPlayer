@@ -1,5 +1,5 @@
 import Foundation
 
-struct Asset {
+struct Asset: Equatable {
     let url: URL
 }
