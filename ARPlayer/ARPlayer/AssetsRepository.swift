@@ -1,3 +1,5 @@
+import Foundation
+
 protocol AssetsRepository {
-    func save(asset: Asset)
+    func save(from URL: URL)
 }

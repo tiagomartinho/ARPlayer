@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         let fileManager = Foundation.FileManager.default
-        let repository = FileSystemAssetsRepository()
-        let useCase = SaveAssetUseCase(fileManager: fileManager, repository: repository)
+        let repository = FileSystemAssetsRepository(fileManager: fileManager)
+        let useCase = SaveAssetUseCase(repository: repository)
         useCase.save(from: url)
         return true
     }

@@ -18,6 +18,9 @@
 		F1ED076120DBE63B00C893B2 /* AssetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076020DBE63B00C893B2 /* AssetsRepository.swift */; };
 		F1ED076320DBE64800C893B2 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076220DBE64800C893B2 /* Asset.swift */; };
 		F1ED076620DBE6AB00C893B2 /* FileSystemAssetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076520DBE6AB00C893B2 /* FileSystemAssetsRepository.swift */; };
+		F1ED076820DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076720DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift */; };
+		F1ED076B20DBEDA100C893B2 /* SpyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076A20DBEDA100C893B2 /* SpyFileManager.swift */; };
+		F1ED076D20DBF13600C893B2 /* SpyAssetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076C20DBF13600C893B2 /* SpyAssetsRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		F1ED076020DBE63B00C893B2 /* AssetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsRepository.swift; sourceTree = "<group>"; };
 		F1ED076220DBE64800C893B2 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		F1ED076520DBE6AB00C893B2 /* FileSystemAssetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemAssetsRepository.swift; sourceTree = "<group>"; };
+		F1ED076720DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemAssetsRepositoryTest.swift; sourceTree = "<group>"; };
+		F1ED076A20DBEDA100C893B2 /* SpyFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyFileManager.swift; sourceTree = "<group>"; };
+		F1ED076C20DBF13600C893B2 /* SpyAssetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAssetsRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				F105144720DBA56B00254B12 /* SaveAssetUseCaseTest.swift */,
-				F105144920DBA56B00254B12 /* Info.plist */,
+				F1ED076720DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift */,
+				F1ED076E20DBF15400C893B2 /* Test Doubles */,
+				F1ED076920DBEC5700C893B2 /* Supporting Files */,
 			);
 			path = ARPlayerTests;
 			sourceTree = "<group>";
@@ -143,6 +151,23 @@
 				F105143E20DBA56B00254B12 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1ED076920DBEC5700C893B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F105144920DBA56B00254B12 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1ED076E20DBF15400C893B2 /* Test Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				F1ED076A20DBEDA100C893B2 /* SpyFileManager.swift */,
+				F1ED076C20DBF13600C893B2 /* SpyAssetsRepository.swift */,
+			);
+			path = "Test Doubles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F105144820DBA56B00254B12 /* SaveAssetUseCaseTest.swift in Sources */,
+				F1ED076820DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift in Sources */,
+				F1ED076B20DBEDA100C893B2 /* SpyFileManager.swift in Sources */,
+				F1ED076D20DBF13600C893B2 /* SpyAssetsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +513,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = ARPlayerTests/Info.plist;
+				INFOPLIST_FILE = "ARPlayerTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,7 +534,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = ARPlayerTests/Info.plist;
+				INFOPLIST_FILE = "ARPlayerTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
