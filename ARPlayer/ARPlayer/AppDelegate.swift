@@ -13,11 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let fileManager = Foundation.FileManager.default
-        let repository = FileSystemAssetsRepository(fileManager: fileManager)
-        let useCase = SaveAssetUseCase(repository: repository)
-        useCase.save(from: url)
+        AppSaveAssetUseCase.save(from: url)
         return true
     }
 }
-

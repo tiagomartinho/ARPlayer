@@ -21,6 +21,8 @@
 		F1ED076820DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076720DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift */; };
 		F1ED076B20DBEDA100C893B2 /* SpyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076A20DBEDA100C893B2 /* SpyFileManager.swift */; };
 		F1ED076D20DBF13600C893B2 /* SpyAssetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076C20DBF13600C893B2 /* SpyAssetsRepository.swift */; };
+		F1ED077020DBFA0E00C893B2 /* AppSaveAssetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076F20DBFA0E00C893B2 /* AppSaveAssetUseCase.swift */; };
+		F1ED077220DBFA4300C893B2 /* FoundationFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED077120DBFA4300C893B2 /* FoundationFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		F1ED076720DBEC4E00C893B2 /* FileSystemAssetsRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemAssetsRepositoryTest.swift; sourceTree = "<group>"; };
 		F1ED076A20DBEDA100C893B2 /* SpyFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyFileManager.swift; sourceTree = "<group>"; };
 		F1ED076C20DBF13600C893B2 /* SpyAssetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAssetsRepository.swift; sourceTree = "<group>"; };
+		F1ED076F20DBFA0E00C893B2 /* AppSaveAssetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSaveAssetUseCase.swift; sourceTree = "<group>"; };
+		F1ED077120DBFA4300C893B2 /* FoundationFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,10 @@
 			children = (
 				F105143020DBA56A00254B12 /* AppDelegate.swift */,
 				F128795A20DBB3C900F61FF8 /* AssetsViewController.swift */,
+				F1ED076F20DBFA0E00C893B2 /* AppSaveAssetUseCase.swift */,
 				F1ED076420DBE66500C893B2 /* Supporting Files */,
 				F1ED075C20DBE61A00C893B2 /* FileManager.swift */,
+				F1ED077120DBFA4300C893B2 /* FoundationFileManager.swift */,
 				F1ED075E20DBE62B00C893B2 /* SaveAssetUseCase.swift */,
 				F1ED076020DBE63B00C893B2 /* AssetsRepository.swift */,
 				F1ED076520DBE6AB00C893B2 /* FileSystemAssetsRepository.swift */,
@@ -300,11 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1ED077220DBFA4300C893B2 /* FoundationFileManager.swift in Sources */,
 				F1ED076120DBE63B00C893B2 /* AssetsRepository.swift in Sources */,
 				F1ED076320DBE64800C893B2 /* Asset.swift in Sources */,
 				F1ED075F20DBE62B00C893B2 /* SaveAssetUseCase.swift in Sources */,
 				F105143120DBA56A00254B12 /* AppDelegate.swift in Sources */,
 				F1ED076620DBE6AB00C893B2 /* FileSystemAssetsRepository.swift in Sources */,
+				F1ED077020DBFA0E00C893B2 /* AppSaveAssetUseCase.swift in Sources */,
 				F128795B20DBB3C900F61FF8 /* AssetsViewController.swift in Sources */,
 				F1ED075D20DBE61A00C893B2 /* FileManager.swift in Sources */,
 			);
