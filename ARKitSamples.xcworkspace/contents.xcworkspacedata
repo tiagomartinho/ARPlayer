@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ARPlayer/ARPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SwiftShotCreatingAGameForAugmentedReality/SwiftShot.xcodeproj">
    </FileRef>
    <FileRef
