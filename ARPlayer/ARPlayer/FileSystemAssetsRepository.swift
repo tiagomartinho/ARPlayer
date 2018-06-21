@@ -10,6 +10,12 @@ class FileSystemAssetsRepository: AssetsRepository {
     
     func save(from URL: URL) {
         guard let userDocumentDirectory = fileManager.userDocumentDirectory else { return }
-        try? fileManager.moveItem(at: URL, to: userDocumentDirectory)
+        do {
+            let finalDirectory = userDocumentDirectory.appendingPathComponent(URL.lastPathComponent)
+            try fileManager.moveItem(at: URL, to: finalDirectory)
+            print("Moved")
+        } catch let error {
+            print("Error moving \(error)")
+        }
     }
 }
