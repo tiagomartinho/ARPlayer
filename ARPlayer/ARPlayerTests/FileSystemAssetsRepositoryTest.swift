@@ -3,7 +3,7 @@ import XCTest
 
 class FileSystemAssetsRepositoryTest: XCTestCase {
     
-    let url = URL(string: "some/random/path/kjvchxif")!
+    let url = URL(string: "some/random/path/fileName")!
     var fileManager: SpyFileManager!
     var repository: FileSystemAssetsRepository!
     
@@ -19,9 +19,9 @@ class FileSystemAssetsRepositoryTest: XCTestCase {
         XCTAssert(fileManager.movedItem)
     }
     
-    func testSaveAssetIntoUserDocumentDirectory() {
+    func testSaveAssetIntoUserDocumentDirectoryWithFileName() {
         repository.save(from: url)
         
-        XCTAssertEqual(fileManager.userDocumentDirectory, fileManager.dstURL)
+        XCTAssertEqual(fileManager.userDocumentDirectory?.appendingPathComponent("fileName"), fileManager.dstURL)
     }
 }
