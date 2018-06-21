@@ -20,8 +20,10 @@ class FileSystemAssetsRepositoryTest: XCTestCase {
     }
     
     func testSaveAssetIntoUserDocumentDirectoryWithFileName() {
+        let dstURL = fileManager.userDocumentDirectory?.appendingPathComponent("fileName")
+        g
         repository.save(from: url)
         
-        XCTAssertEqual(fileManager.userDocumentDirectory?.appendingPathComponent("fileName"), fileManager.dstURL)
+        XCTAssertEqual(dstURL, fileManager.dstURL)
     }
 }
