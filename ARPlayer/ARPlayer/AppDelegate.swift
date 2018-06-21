@@ -13,12 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if let viewController = self.window?.rootViewController as? ViewController {
-            viewController.modelURL = url
-            return true
-        } else {
-            return false
-        }
+        let fileManager = Foundation.FileManager.default
+        let useCase = SaveAssetUseCase(fileManager: fileManager)
+        useCase.save(from: url)
+        return true
     }
 }
 

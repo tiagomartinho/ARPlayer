@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F105143120DBA56A00254B12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105143020DBA56A00254B12 /* AppDelegate.swift */; };
-		F105143320DBA56A00254B12 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F105143220DBA56A00254B12 /* art.scnassets */; };
-		F105143520DBA56A00254B12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105143420DBA56A00254B12 /* ViewController.swift */; };
 		F105143A20DBA56B00254B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F105143920DBA56B00254B12 /* Assets.xcassets */; };
 		F105143D20DBA56B00254B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F105143B20DBA56B00254B12 /* LaunchScreen.storyboard */; };
-		F105144820DBA56B00254B12 /* ARPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105144720DBA56B00254B12 /* ARPlayerTests.swift */; };
+		F105144820DBA56B00254B12 /* SaveAssetUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105144720DBA56B00254B12 /* SaveAssetUseCaseTest.swift */; };
 		F105145320DBA56B00254B12 /* ARPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105145220DBA56B00254B12 /* ARPlayerUITests.swift */; };
 		F128795B20DBB3C900F61FF8 /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128795A20DBB3C900F61FF8 /* AssetsViewController.swift */; };
+		F1ED075D20DBE61A00C893B2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED075C20DBE61A00C893B2 /* FileManager.swift */; };
+		F1ED075F20DBE62B00C893B2 /* SaveAssetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED075E20DBE62B00C893B2 /* SaveAssetUseCase.swift */; };
+		F1ED076120DBE63B00C893B2 /* AssetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076020DBE63B00C893B2 /* AssetsRepository.swift */; };
+		F1ED076320DBE64800C893B2 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076220DBE64800C893B2 /* Asset.swift */; };
+		F1ED076620DBE6AB00C893B2 /* FileSystemAssetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ED076520DBE6AB00C893B2 /* FileSystemAssetsRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,18 +40,21 @@
 /* Begin PBXFileReference section */
 		F105142D20DBA56A00254B12 /* ARPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F105143020DBA56A00254B12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F105143220DBA56A00254B12 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		F105143420DBA56A00254B12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F105143920DBA56B00254B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F105143C20DBA56B00254B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F105143E20DBA56B00254B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F105144320DBA56B00254B12 /* ARPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F105144720DBA56B00254B12 /* ARPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlayerTests.swift; sourceTree = "<group>"; };
+		F105144720DBA56B00254B12 /* SaveAssetUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAssetUseCaseTest.swift; sourceTree = "<group>"; };
 		F105144920DBA56B00254B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F105144E20DBA56B00254B12 /* ARPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F105145220DBA56B00254B12 /* ARPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlayerUITests.swift; sourceTree = "<group>"; };
 		F105145420DBA56B00254B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F128795A20DBB3C900F61FF8 /* AssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
+		F1ED075C20DBE61A00C893B2 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		F1ED075E20DBE62B00C893B2 /* SaveAssetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAssetUseCase.swift; sourceTree = "<group>"; };
+		F1ED076020DBE63B00C893B2 /* AssetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsRepository.swift; sourceTree = "<group>"; };
+		F1ED076220DBE64800C893B2 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		F1ED076520DBE6AB00C893B2 /* FileSystemAssetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemAssetsRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,12 @@
 			children = (
 				F105143020DBA56A00254B12 /* AppDelegate.swift */,
 				F128795A20DBB3C900F61FF8 /* AssetsViewController.swift */,
-				F105143220DBA56A00254B12 /* art.scnassets */,
-				F105143420DBA56A00254B12 /* ViewController.swift */,
-				F105143920DBA56B00254B12 /* Assets.xcassets */,
-				F105143B20DBA56B00254B12 /* LaunchScreen.storyboard */,
-				F105143E20DBA56B00254B12 /* Info.plist */,
+				F1ED076420DBE66500C893B2 /* Supporting Files */,
+				F1ED075C20DBE61A00C893B2 /* FileManager.swift */,
+				F1ED075E20DBE62B00C893B2 /* SaveAssetUseCase.swift */,
+				F1ED076020DBE63B00C893B2 /* AssetsRepository.swift */,
+				F1ED076520DBE6AB00C893B2 /* FileSystemAssetsRepository.swift */,
+				F1ED076220DBE64800C893B2 /* Asset.swift */,
 			);
 			path = ARPlayer;
 			sourceTree = "<group>";
@@ -113,7 +120,7 @@
 		F105144620DBA56B00254B12 /* ARPlayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F105144720DBA56B00254B12 /* ARPlayerTests.swift */,
+				F105144720DBA56B00254B12 /* SaveAssetUseCaseTest.swift */,
 				F105144920DBA56B00254B12 /* Info.plist */,
 			);
 			path = ARPlayerTests;
@@ -126,6 +133,16 @@
 				F105145420DBA56B00254B12 /* Info.plist */,
 			);
 			path = ARPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F1ED076420DBE66500C893B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F105143920DBA56B00254B12 /* Assets.xcassets */,
+				F105143B20DBA56B00254B12 /* LaunchScreen.storyboard */,
+				F105143E20DBA56B00254B12 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F105143320DBA56A00254B12 /* art.scnassets in Resources */,
 				F105143D20DBA56B00254B12 /* LaunchScreen.storyboard in Resources */,
 				F105143A20DBA56B00254B12 /* Assets.xcassets in Resources */,
 			);
@@ -259,9 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F105143520DBA56A00254B12 /* ViewController.swift in Sources */,
+				F1ED076120DBE63B00C893B2 /* AssetsRepository.swift in Sources */,
+				F1ED076320DBE64800C893B2 /* Asset.swift in Sources */,
+				F1ED075F20DBE62B00C893B2 /* SaveAssetUseCase.swift in Sources */,
 				F105143120DBA56A00254B12 /* AppDelegate.swift in Sources */,
+				F1ED076620DBE6AB00C893B2 /* FileSystemAssetsRepository.swift in Sources */,
 				F128795B20DBB3C900F61FF8 /* AssetsViewController.swift in Sources */,
+				F1ED075D20DBE61A00C893B2 /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F105144820DBA56B00254B12 /* ARPlayerTests.swift in Sources */,
+				F105144820DBA56B00254B12 /* SaveAssetUseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = ARPlayer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARPlayer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = ARPlayer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARPlayer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
